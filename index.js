@@ -3818,7 +3818,7 @@ const instagramBtn = document.getElementById("instagram");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
-let apiQuotes = [];
+
 
 // Show New Qoute
 function newQuote() {
@@ -3858,6 +3858,8 @@ function complete() {
   loader.hidden = true;
   quoteConainer.hidden = false;
 }
+
+// let apiQuotes = [];
 // function newQuote() {
 //   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 //   console.log("randomQuote:", randomQuote);
