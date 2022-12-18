@@ -3816,11 +3816,13 @@ const quoteText = document.getElementById("quote");
 const autherText = document.getElementById("author");
 const instagramBtn = document.getElementById("instagram");
 const newQuoteBtn = document.getElementById("new-quote");
+const loader = document.getElementById("loader");
 
 // let apiQuotes = [];
 
 // Show New Qoute
 function newQuote() {
+  loading();
   const randomQuote =
     localQuotes[Math.floor(Math.random() * localQuotes.length)];
 
@@ -3837,10 +3839,25 @@ function newQuote() {
   }
 
   quoteText.textContent = randomQuote.text;
+
+  complete();
 }
 newQuote();
+// loading();
 
 newQuoteBtn.addEventListener("click", newQuote);
+
+// Show Loading
+function loading() {
+  loader.hidden = false;
+  quoteConainer.hidden = true;
+}
+
+// Hide Loading
+function complete() {
+  loader.hidden = true;
+  quoteConainer.hidden = false;
+}
 // function newQuote() {
 //   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 //   console.log("randomQuote:", randomQuote);
