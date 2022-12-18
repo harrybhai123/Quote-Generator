@@ -3818,7 +3818,7 @@ const instagramBtn = document.getElementById("instagram");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
-// let apiQuotes = [];
+let apiQuotes = [];
 
 // Show New Qoute
 function newQuote() {
