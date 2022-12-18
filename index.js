@@ -3859,6 +3859,8 @@ function complete() {
   quoteConainer.hidden = false;
 }
 
+// End 
+
 // let apiQuotes = [];
 // function newQuote() {
 //   const randomQuote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
