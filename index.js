@@ -3842,8 +3842,8 @@ function newQuote() {
 
   complete();
 }
-// newQuote();
-loading();
+newQuote();
+// loading();
 
 newQuoteBtn.addEventListener("click", newQuote);
 
